@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pancard Deatail</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="header">
+      <h1>Fill Your Detail</h1>
+    </div>
+    <div id="form">
+      <input type="text" placeholder="Enter Your Name" id="name1" />
+      <input type="number" id="age" placeholder="Enter Your age" />
+      <select  id="qulifaction">
+        <option>10th</option>
+        <option>12th</option>
+        <option>Graduate</option>
+        <option>Post Graduate</option>
+      </select>
+      
+      <input type="text" placeholder="Enter PanNumber" id="pan"/>
+      
+      <button id="add">Add</button>
+      
+    </div>
+    <div id="message">
+    <p id="msg3"> </p>
+    <p id="msg"> </p>
+    <p id="msg1"></p>
+    <p id="msg2"></p>
+    </div>
+    <div id="filterheading">
+    
+      <h1>Filter And Search </h1>
+
+    </div>
+    <div id="filter">
+        <input type="text" placeholder="Search By Enter Name" id="NameSearch" onkeyup="searchNameFun()">
+        <button id="AZ" onclick="sortTable()">A-Z</button>
+        <button id="ZA" onclick="sortTable1()">Z-A</button>
+        <input type="text" placeholder="Search By Enter Pan" id="search" onkeyup="searchfun()">
+
+    </div>
+    <div id="tablecon">
+    <table id="table">
+        <tr>
+        <th>Name</th>
+        <th>Age</th>
+        <th>Qulifaction</th>
+        <th>Pan Number</th>
+        <th>Action</th>
+        </tr>
+        
+         <tr>
+        <td>Santosh</td>
+        <td>25</td>
+        <td>10th</td>
+        <td>9876543210</td>
+        <td><button id="remove" class="btn">Delete</button></td>
+          
+    </tr>
+    <tr>
+        <td>Rohit</td>
+        <td>49</td>
+        <td>12th</td>
+        <td>1234567890</td>
+        <td><button id="remove" class="btn">Delete</button></td>
+          
+    </tr>
+    <tr>
+      <td>Prakash</td>
+      <td>40</td>
+      <td>Graduate</td>
+      <td>8972651879</td>
+      <td><button id="remove" class="btn">Delete</button></td>
+        
+  </tr>
+  <tr>
+    <td>Nitu</td>
+    <td>23</td>
+    <td>Graduate</td>
+    <td>9637418560</td>
+    <td><button id="remove" class="btn">Delete</button></td>
+      
+</tr>
+   
+
+
+
+
+
+    </table>
+  </div>
+    <script src="script.js"></script>
+  </body>
+</html>
